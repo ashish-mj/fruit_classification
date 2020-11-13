@@ -22,7 +22,7 @@ X = fruits[['mass','width','height']]
 Y = fruits['fruit_label']
 X_train, X_test, Y_train,Y_test = train_test_split(X,Y,random_state=0)
 
-knn = KNeighborsClassifier(n_neighbors=7)
+knn = KNeighborsClassifier(n_neighbors=5)
 
 knn.fit(X_train, Y_train)
 
